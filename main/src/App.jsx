@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from "./pages/home/Home"
-
+import Home from "./pages/home/Home";
+import Count from "./pages/count/Count";
 
 
 const App = () => {
@@ -9,13 +9,13 @@ const App = () => {
   
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
-      
+      <Route path="/count" element={<Count />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   
   </BrowserRouter>
   )
 }
 
-export default App
+export default App;

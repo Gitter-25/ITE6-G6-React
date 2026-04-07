@@ -1,5 +1,5 @@
-
-import './Home.css'
+import { Link } from 'react-router-dom';
+import './Home.css';
 
 const Home = () => (
     <div className="container">
@@ -11,7 +11,12 @@ const Home = () => (
             <li>Mary Annjellyn Laduiana</li>
             <li>Ace Blixen Rubante</li>
         </ol>
+
+       <Link to="/count">
+        <button className='btn'>Go to Counter</button>
+      </Link>
     </div>
+    
 )
 
 export default Home
