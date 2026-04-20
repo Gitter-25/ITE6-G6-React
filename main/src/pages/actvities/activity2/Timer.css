@@ -1,0 +1,15 @@
+.timer {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.timer h1 {
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+.timer button {
+  margin: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+}
