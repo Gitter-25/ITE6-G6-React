@@ -3,6 +3,7 @@ import Home from "./pages/home/Home";
 import Count from "./pages/count/Count";
 import Timer from "./pages/actvities/activity2/Timer";
 import Products from "./pages/actvities/activity3/Product";
+import Anime from "./pages/actvities/activity4/anime";
 
 const App = () => {
 
@@ -14,7 +15,8 @@ const App = () => {
       <Route path="/home" element={<Home />} />
       {/* <Route path="/" element={<Home />} /> */}
       {/* <Route path="/" element={<Timer />} /> */}
-      <Route path="/" element={<Products />} />
+      {/* <Route path="/" element={<Products />} /> */}
+      <Route path="/" element={<Anime />} />
     </Routes>
   
   </BrowserRouter>
