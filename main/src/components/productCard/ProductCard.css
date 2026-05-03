@@ -1,0 +1,32 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 260px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Price */
+.card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Stock status colors */
+.in-stock {
+  color: green;
+  font-weight: bold;
+}
+
+.out-stock {
+  color: red;
+  font-weight: bold;
+}
