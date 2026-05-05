@@ -10,3 +10,12 @@
   width: 250px;
   border-radius: 5px;
 }
+
+
+/* Container for cards */
+.products-container {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  flex-wrap: wrap;           /* allows wrapping */
+  gap: 20px;                 /* space between cards */
+}

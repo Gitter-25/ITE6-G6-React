@@ -15,6 +15,7 @@ const Products = () => {
     <section className="products">
       <h2>Product Inventory</h2>
 
+      <div className="products-container">
       {products.map((item) => (
         <ProductCard
           key={item.id}
@@ -23,6 +24,8 @@ const Products = () => {
           inStock={item.inStock}
         />
       ))}
+      </div>
+
     </section>
   );
 };

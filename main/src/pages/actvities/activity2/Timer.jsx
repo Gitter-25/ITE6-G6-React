@@ -2,23 +2,28 @@ import { useState, useEffect } from "react";
 import "./Timer.css";
 
 const Timer = () => {
-  const [time, setTime] = useState(10); // start at 10 seconds
+  const [time, setTime] = useState(10);
   const [message, setMessage] = useState("Ready");
+  const [isRunning, setIsRunning] = useState(false); // 👈 NEW
 
   useEffect(() => {
-    // if-else logic
+    if (!isRunning) return; // 👈 prevent auto start
+
+    let interval;
+
     if (time > 0) {
       setMessage("Counting down...");
 
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         setTime((prev) => prev - 1);
       }, 1000);
-
-      return () => clearInterval(interval);
     } else {
       setMessage("Time's up!");
+      setIsRunning(false); // 👈 stop when finished
     }
-  }, [time]);
+
+    return () => clearInterval(interval);
+  }, [time, isRunning]); // 👈 add isRunning
 
   return (
     <section className="timer">
@@ -28,8 +33,15 @@ const Timer = () => {
       <p>{message}</p>
 
       <div>
-        <button onClick={() => setTime(10)}>Reset</button>
-        <button onClick={() => setTime(0)}>Stop</button>
+        <button onClick={() => setIsRunning(true)}>Start</button>
+        <button onClick={() => setIsRunning(false)}>Stop</button>
+        <button onClick={() => {
+          setTime(10);
+          setIsRunning(false);
+          setMessage("Ready");
+        }}>
+          Reset
+        </button>
       </div>
     </section>
   );

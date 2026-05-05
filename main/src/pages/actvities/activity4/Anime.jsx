@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import AnimeCard from "../../../components/AnimeCard/AnimeCard";
 import AnimeLoader from "../../../components/AnimeLoader/AnimeLoader";
+import "./Anime.css"; //
 
 const Anime = () => {
   const [anime, setAnime] = useState([]);
@@ -24,11 +25,10 @@ const Anime = () => {
   }, []);
 
   return (
-    <section>
-      <h2 style={{justifyContent: "center"}}>Top Anime</h2>
+    <section className="anime">
+      <h2>Top Anime</h2>
 
-      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        
+      <div className="anime-container">
         {loading
           ? Array(6).fill().map((_, i) => <AnimeLoader key={i} />)
           : anime.map((item) => (
@@ -39,7 +39,6 @@ const Anime = () => {
                 score={item.score}
               />
             ))}
-
       </div>
     </section>
   );

@@ -1,9 +1,9 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from "./pages/home/Home";
-import Count from "./pages/count/Count";
+import Home from "./pages/actvities/activity1/Home";
 import Timer from "./pages/actvities/activity2/Timer";
 import Products from "./pages/actvities/activity3/Product";
 import Anime from "./pages/actvities/activity4/anime";
+import LandingPage from "./pages/MCO/LandingPage/LandingPage";
 
 const App = () => {
 
@@ -11,12 +11,11 @@ const App = () => {
   
   <BrowserRouter>
     <Routes>
-      <Route path="/count" element={<Count />} />
       <Route path="/home" element={<Home />} />
-      {/* <Route path="/" element={<Home />} /> */}
-      {/* <Route path="/" element={<Timer />} /> */}
-      {/* <Route path="/" element={<Products />} /> */}
-      <Route path="/" element={<Anime />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/timer" element={<Timer />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/anime" element={<Anime />} />
     </Routes>
   
   </BrowserRouter>

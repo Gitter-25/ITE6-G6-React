@@ -1,0 +1,56 @@
+/* Full page center + gradient background */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Members */
+.members p {
+  margin: 3px 0;
+  opacity: 0.9;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Buttons design */
+.buttons a {
+  text-decoration: none;
+  background: white;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.buttons a:hover {
+  background: #222;
+  color: white;
+  transform: translateY(-3px);
+}

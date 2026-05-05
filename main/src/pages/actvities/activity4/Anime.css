@@ -1,0 +1,22 @@
+.anime {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.anime h2 {
+  margin-bottom: 20px;
+}
+
+/* 👇 replaces inline style */
+.anime-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* optional: control width */
+.anime-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
