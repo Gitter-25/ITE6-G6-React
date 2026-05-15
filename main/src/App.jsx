@@ -5,6 +5,12 @@ import Products from "./pages/actvities/activity3/Product";
 import Anime from "./pages/actvities/activity4/anime";
 import LandingPage from "./pages/MCO/LandingPage/LandingPage";
 
+import Perito from "./pages/portfolio/Perito/Perito";
+import Delda from "./pages/portfolio/Delda/Delda";
+import Laudiana from "./pages/portfolio/Laudiana/Laudiana";
+import Rubante from "./pages/portfolio/Rubante/Rubante";
+
+
 const App = () => {
 
   return (
@@ -16,6 +22,13 @@ const App = () => {
       <Route path="/timer" element={<Timer />} />
       <Route path="/products" element={<Products />} />
       <Route path="/anime" element={<Anime />} />
+
+      <Route path="/perito" element={<Perito />} />
+      <Route path="/delda" element={<Delda />} />
+      <Route path="/laudiana" element={<Laudiana />} />
+      <Route path="/rubante" element={<Rubante />} />
+
+
     </Routes>
   
   </BrowserRouter>

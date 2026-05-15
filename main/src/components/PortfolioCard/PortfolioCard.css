@@ -1,0 +1,159 @@
+.portfolio {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(135deg, #5b86e5, #7f53ac);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1150px;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  border-radius: 25px;
+  padding: 50px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image img {
+  width: 320px;
+  height: 320px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+  border: 6px solid white;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-content {
+  flex: 1;
+  color: white;
+}
+
+.portfolio-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-bottom: 30px;
+
+  color: #f1f1f1;
+}
+
+.portfolio-section {
+  margin-bottom: 25px;
+}
+
+.portfolio-section h2 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.portfolio-section p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.portfolio-tags span {
+  background: rgba(255, 255, 255, 0.2);
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  font-size: 0.95rem;
+
+  backdrop-filter: blur(5px);
+
+  transition: 0.3s ease;
+}
+
+.portfolio-tags span:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .portfolio-container {
+    flex-direction: column;
+    text-align: center;
+
+    padding: 40px 25px;
+  }
+
+  .portfolio-image img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .portfolio-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio-container {
+    padding: 30px 20px;
+  }
+
+  .portfolio-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .portfolio-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-content h3 {
+    font-size: 1rem;
+  }
+
+  .portfolio-section p {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .portfolio-tags span {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}

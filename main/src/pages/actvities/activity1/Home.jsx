@@ -12,9 +12,7 @@ const Home = () => (
             <li>Ace Blixen Rubante</li>
         </ol>
 
-       <Link to="/LandingPage">
-        <button className='btn'>Go to Landing Page</button>
-      </Link>
+       
     </div>
     
 )
