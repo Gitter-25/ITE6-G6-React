@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import AnimeCard from "../../../components/AnimeCard/AnimeCard";
 import AnimeLoader from "../../../components/AnimeLoader/AnimeLoader";
-import "./Anime.css"; //
+
+import "./Anime.css"; 
 
 const Anime = () => {
   const [anime, setAnime] = useState([]);
